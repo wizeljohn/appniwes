@@ -104,6 +104,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.factory'])
           templateUrl: 'templates/contact.html'
         }
       }
+    })  
+  .state('app.giftofwarmth', {
+      url: '/giftofwarmth',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/giftofwarmth.html'
+        }
+      }
     })
   .state('app.meet-our-service-team', {
       url: '/meet-our-service-team',

@@ -8,11 +8,12 @@ angular.module('starter.controllers', [])
 })
 
 .controller('homeCtrl', function($scope) {
-  $scope.GotoLink = function (url) {
-    
-      console.log('READY!'); 
-    window.open(link,'_system');
+
+
+  $scope.openLink = function (url) {
+    window.open(url,'_blank');
   }
+
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
@@ -39,3 +40,4 @@ angular.module('starter.controllers', [])
     $scope.selection = 'main';
   }    
 });
+

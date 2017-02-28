@@ -12,19 +12,7 @@ body{
     line-height: 1.42857143 !important;
     font-size: 18px;
 }
-#my-iframe iframe {
-   height: 600px;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   border: 1px inset #7a8b8b;
-   margin: 0 auto;
-   /* put following styles (necessary for overflow and 
-      scrolling handling) in div wrapper around iframe 
-      because not stable in CSS
-     -webkit-overflow-scrolling: touch; 
-                       overflow: auto; */
- }
+
 .submenu-item{
     padding-left:20px;
 }

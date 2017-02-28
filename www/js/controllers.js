@@ -8,6 +8,11 @@ angular.module('starter.controllers', [])
 })
 
 .controller('homeCtrl', function($scope) {
+  $scope.GotoLink = function (url) {
+    
+      console.log('READY!'); 
+    window.open(link,'_system');
+  }
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
@@ -16,6 +21,7 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
+
 })
 .controller('newacctCtrl', function($scope) {
     
@@ -33,6 +39,3 @@ angular.module('starter.controllers', [])
     $scope.selection = 'main';
   }    
 });
-  $scope.GotoLink = function (url) {
-    window.open(link,'_system');
-  }
